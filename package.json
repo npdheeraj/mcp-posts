@@ -1,0 +1,44 @@
+{
+  "name": "posts-crud-mcp-api",
+  "version": "1.0.0",
+  "description": "Minimal TypeScript REST API for posts CRUD operations with MCP Server integration",
+  "author": {
+    "name": "Dheeraj Kumar",
+    "email": "dheeraj@example.com"
+  },
+  "main": "dist/src/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "db:init": "ts-node src/database/init.ts",
+    "mcp": "ts-node src/mcp/server.ts"
+  },
+  "engines": {
+    "node": ">=22.22.0",
+    "npm": ">=10.9.4"
+  },
+  "keywords": [
+    "posts",
+    "crud",
+    "rest-api",
+    "typescript",
+    "mysql",
+    "mcp",
+    "model-context-protocol"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "ts-node": "^10.9.2"
+  }
+}
